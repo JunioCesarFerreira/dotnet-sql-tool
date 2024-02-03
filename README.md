@@ -39,23 +39,23 @@ As configurações de cada banco de dados devem ser armazenadas em um arquivo YA
 O arquivo de configuração `config.yaml` deve seguir o seguinte formato:
 
 ```yaml
-bancos_de_dados:
-  - tipo: MySQL
+databases:
+  - type: MySQL
     host: localhost
-    porta: 3306
-    nome_db: exemplo_mysql
-    usuario: usuario_mysql
-    senha: senha_mysql
+    port: 3306
+    name_db: exemplo_mysql
+    user: usuario_mysql
+    password: senha_mysql
 
-  - tipo: PostgreSQL
+  - type: PostgreSQL
     host: localhost
-    porta: 5432
-    nome_db: exemplo_postgres
-    usuario: usuario_postgres
-    senha: senha_postgres
+    port: 5432
+    name_db: exemplo_postgres
+    user: usuario_postgres
+    password: senha_postgres
 
-  - tipo: SQLite
-    arquivo_db: /caminho/para/arquivo_sqlite.db
+  - type: SQLite
+    file_db: /caminho/para/arquivo_sqlite.db
 
 # Adicione mais configurações conforme necessário.
 ```
