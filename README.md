@@ -3,7 +3,9 @@
 ## Visão Geral
 Este projeto visa criar uma ferramenta de gerenciamento de banco de dados que se conecte a vários tipos de sistemas de banco de dados. A ferramenta permitirá executar comandos SQL e visualizar os resultados.
 
-## Interface do Usuário
+## Requisitos iniciais de implementação
+
+### Interface do Usuário
 A interface do usuário é dividida em várias seções principais:
 
 ![sketch-ui](https://github.com/JunioCesarFerreira/dotnet-sql-tool/blob/main/doc/desenho-inicial-ui.png)
@@ -17,23 +19,23 @@ A interface do usuário é dividida em várias seções principais:
 - **Histórico**: Um registro de comandos SQL executados anteriormente.
 	- Exibir uma nova janela com o log dos comandos executados e seus retornos.
 
-## Especificações Técnicas
-### Configurações do Banco de Dados
+### Especificações Técnicas
+#### Configurações do Banco de Dados
 As configurações devem ser armazenadas em um arquivo YAML seguindo o formato especificado anteriormente.
 
-### Classe de Acesso às Configurações
+#### Classe de Acesso às Configurações
 Uma classe em C# deve ser implementada para gerenciar a leitura e o acesso às configurações do arquivo YAML.
 
-### Implementação da Interface
+#### Implementação da Interface
 A interface do usuário deve ser desenvolvida conforme o desenho fornecido, com funcionalidades claras e intuitivas para interação com os bancos de dados.
 
-## Desenvolvimento
+### Desenvolvimento
 Este projeto será desenvolvido para fins didáticos, focando em práticas de codificação limpa, documentação clara e testes unitários.
 
-## Configurações do Banco de Dados
+### Configurações do Banco de Dados
 As configurações de cada banco de dados devem ser armazenadas em um arquivo YAML. Este arquivo conterá informações como tipo de banco de dados, credenciais e outras configurações específicas.
 
-### Formato do Arquivo de Configuração
+#### Formato do Arquivo de Configuração
 O arquivo de configuração `config.yaml` deve seguir o seguinte formato:
 
 ```yaml
@@ -58,17 +60,20 @@ bancos_de_dados:
 # Adicione mais configurações conforme necessário.
 ```
 
-### Classe de Acesso às Configurações
+#### Classe de Acesso às Configurações
 Você deve implementar uma classe em C# que seja responsável por carregar estas configurações do arquivo YAML. Esta classe deve:
 
 - Ser capaz de ler o arquivo YAML e parsear as configurações.
 - Fornecer um método para acessar as configurações de cada tipo de banco de dados.
 - Garantir que as informações sensíveis, como senhas, sejam tratadas de forma segura.
 
-## Requisitos Adicionais
+### Classes de Conexão aos Bancos de Dados
+Elaborar classes seguindo os princípios SOLID para realizar as conexões aos diferentes tipos de bancos de dados.
+
+### Requisitos Adicionais
 - Documente claramente o código.
 - Escreva testes unitários para a classe de configuração.
 - Siga as melhores práticas de programação e design de software.
 
-## Contribuição
+### Contribuição
 Como este é um projeto de aprendizado, encorajamos você a experimentar e a propor melhorias ou funcionalidades adicionais. Estamos ansiosos para ver suas contribuições e discutir suas ideias.
