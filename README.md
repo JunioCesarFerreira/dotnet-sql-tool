@@ -28,7 +28,7 @@ Uma classe em C# deve ser implementada para gerenciar a leitura e o acesso às c
 A interface do usuário deve ser desenvolvida conforme o desenho fornecido, com funcionalidades claras e intuitivas para interação com os bancos de dados.
 
 ## Desenvolvimento
-Este projeto será desenvolvido em parceria com um aprendiz, focando em práticas de codificação limpa, documentação clara e testes unitários.
+Este projeto será desenvolvido para fins didáticos, focando em práticas de codificação limpa, documentação clara e testes unitários.
 
 ## Configurações do Banco de Dados
 As configurações de cada banco de dados devem ser armazenadas em um arquivo YAML. Este arquivo conterá informações como tipo de banco de dados, credenciais e outras configurações específicas.
