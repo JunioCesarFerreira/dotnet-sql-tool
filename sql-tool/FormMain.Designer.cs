@@ -33,6 +33,7 @@
             richTextBox2 = new RichTextBox();
             label2 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
+            button4 = new Button();
             button5 = new Button();
             comboBox1 = new ComboBox();
             button3 = new Button();
@@ -41,7 +42,6 @@
             tableLayoutPanel3 = new TableLayoutPanel();
             label1 = new Label();
             prompt_sql = new RichTextBox();
-            button4 = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -127,6 +127,18 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(779, 39);
             tableLayoutPanel2.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.None;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(253, 7);
+            button4.Name = "button4";
+            button4.Size = new Size(24, 25);
+            button4.TabIndex = 10;
+            button4.Text = "⚙️";
+            button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -224,18 +236,6 @@
             prompt_sql.TabIndex = 1;
             prompt_sql.Text = "";
             // 
-            // button4
-            // 
-            button4.Anchor = AnchorStyles.None;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(253, 7);
-            button4.Name = "button4";
-            button4.Size = new Size(24, 25);
-            button4.TabIndex = 10;
-            button4.Text = "⚙️";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -243,7 +243,7 @@
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(785, 421);
             Controls.Add(tableLayoutPanel1);
-            MinimumSize = new Size(500, 300);
+            MinimumSize = new Size(630, 300);
             Name = "FormMain";
             Text = "SQL Tool";
             Load += FormMain_Load;

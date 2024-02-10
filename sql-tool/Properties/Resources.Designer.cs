@@ -59,15 +59,5 @@ namespace sql_tool.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap gerenciamento_de_banco_de_dados {
-            get {
-                object obj = ResourceManager.GetObject("gerenciamento-de-banco-de-dados", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
