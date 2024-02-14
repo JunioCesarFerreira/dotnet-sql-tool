@@ -37,7 +37,7 @@
             button5 = new Button();
             comboBox1 = new ComboBox();
             button3 = new Button();
-            button1 = new Button();
+            Button_Help = new Button();
             button2 = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             label1 = new Label();
@@ -119,7 +119,7 @@
             tableLayoutPanel2.Controls.Add(button5, 1, 0);
             tableLayoutPanel2.Controls.Add(comboBox1, 0, 0);
             tableLayoutPanel2.Controls.Add(button3, 6, 0);
-            tableLayoutPanel2.Controls.Add(button1, 5, 0);
+            tableLayoutPanel2.Controls.Add(Button_Help, 5, 0);
             tableLayoutPanel2.Controls.Add(button2, 2, 0);
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -173,17 +173,18 @@
             button3.Text = "Histórico";
             button3.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Button_Help
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(620, 7);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 25);
-            button1.TabIndex = 1;
-            button1.Text = "Ajuda";
-            button1.UseVisualStyleBackColor = true;
+            Button_Help.Anchor = AnchorStyles.None;
+            Button_Help.FlatStyle = FlatStyle.Flat;
+            Button_Help.ForeColor = Color.White;
+            Button_Help.Location = new Point(620, 7);
+            Button_Help.Name = "Button_Help";
+            Button_Help.Size = new Size(75, 25);
+            Button_Help.TabIndex = 1;
+            Button_Help.Text = "Ajuda";
+            Button_Help.UseVisualStyleBackColor = true;
+            Button_Help.Click += Button_Help_Click;
             // 
             // button2
             // 
@@ -235,6 +236,7 @@
             prompt_sql.Size = new Size(773, 157);
             prompt_sql.TabIndex = 1;
             prompt_sql.Text = "";
+            prompt_sql.KeyDown += prompt_sql_KeyDown;
             // 
             // FormMain
             // 
@@ -245,6 +247,7 @@
             Controls.Add(tableLayoutPanel1);
             MinimumSize = new Size(630, 300);
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SQL Tool";
             Load += FormMain_Load;
             tableLayoutPanel1.ResumeLayout(false);
@@ -261,7 +264,7 @@
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private ComboBox comboBox1;
-        private Button button1;
+        private Button Button_Help;
         private TableLayoutPanel tableLayoutPanel4;
         private TableLayoutPanel tableLayoutPanel3;
         private Label label1;
