@@ -27,6 +27,8 @@ COPY ./init-scripts/ /docker-entrypoint-initdb.d/
 
 Altere `nome_do_banco`, `usuario_personalizado`, e `senha_segura` conforme desejado.
 
+[Veja o arquivo Dockerfile](Dockerfile).
+
 ### 2. (Opcional) Preparar Scripts de Inicialização
 
 Se desejar executar scripts SQL para configuração inicial do seu banco de dados (como criação de tabelas ou inserção de dados), coloque-os em um diretório chamado `init-scripts` no mesmo local que seu Dockerfile.

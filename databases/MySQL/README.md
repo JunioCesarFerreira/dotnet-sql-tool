@@ -26,6 +26,8 @@ ENV MYSQL_ROOT_PASSWORD senha_root
 COPY ./init-scripts/ /docker-entrypoint-initdb.d/
 ```
 
+[Veja o arquivo Dockerfile](Dockerfile).
+
 Substitua `nome_do_banco`, `usuario_personalizado`, `senha_segura`, e `senha_root` conforme desejado.
 
 ### 2. (Opcional) Preparar Scripts de Inicialização

@@ -8,7 +8,7 @@ Este projeto visa criar uma ferramenta de gerenciamento de banco de dados que se
 ### Interface do Usuário
 A interface do usuário é dividida em várias seções principais:
 
-![sketch-ui](https://github.com/JunioCesarFerreira/dotnet-sql-tool/blob/main/doc/desenho-inicial-ui.png)
+![sketch-ui](./doc/desenho-inicial-ui.png)
 
 - **Seleção de Conexão**: Uma área dedicada para selecionar entre as conexões de banco de dados configuradas.
 - **Prompt de Comandos SQL**: Um prompt interativo onde os usuários podem digitar e executar comandos SQL.
@@ -69,6 +69,9 @@ Você deve implementar uma classe em C# que seja responsável por carregar estas
 
 ### Classes de Conexão aos Bancos de Dados
 Elaborar classes seguindo os princípios SOLID para realizar as conexões aos diferentes tipos de bancos de dados.
+
+### Testes
+O diretório `databases` contém informações para geração de containers Docker para testes com [PostgreSQL](./databases/PostgreSQL/README.md) e [MySQL](./databases/MySQL/README.md).
 
 ### Requisitos Adicionais
 - Documente claramente o código.
