@@ -55,10 +55,10 @@ Isso cria e inicia um container chamado `meu_postgres`, mapeando a porta padrão
 
 ### Conectar ao Banco de Dados PostgreSQL
 
-Para executar queries, você primeiro precisa conectar-se ao banco de dados. Se você tiver o `psql` instalado em sua máquina, pode conectar-se usando:
+Para executar queries via terminal utilize:
 
 ```bash
-psql -h localhost -p 5432 -U usuario_personalizado -d nome_do_banco
+docker exec -it nome_do_container psql -h localhost -p 5432 -U usuario_personalizado -d nome_do_banco
 ```
 
 Insira a `senha_segura` quando solicitado.
@@ -74,12 +74,14 @@ CREATE TABLE exemplo (
 );
 ```
 
+Todo comando SQL deve ser finalizado com `;`.
+
 ### (Opcional) Executar Queries Sem Entrar no Container
 
 Você também pode executar queries diretamente do terminal do host sem entrar no container, utilizando:
 
 ```bash
-docker exec -it meu_postgres psql -U usuario_personalizado -d nome_do_banco -c "SUA_QUERY_SQL_AQUI"
+docker exec -it nome_do_container psql -U usuario_personalizado -d nome_do_banco -c "SUA_QUERY_SQL_AQUI"
 ```
 
 Substitua `SUA_QUERY_SQL_AQUI` pela sua consulta SQL real.
