@@ -28,29 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            RichTextBox_Markdown_View = new RichTextBox();
+            RichTextBox_MDFile = new RichTextBox();
             SuspendLayout();
             // 
-            // RichTextBox_Markdown_View
+            // RichTextBox_MDFile
             // 
-            RichTextBox_Markdown_View.BackColor = Color.Black;
-            RichTextBox_Markdown_View.BorderStyle = BorderStyle.None;
-            RichTextBox_Markdown_View.Dock = DockStyle.Fill;
-            RichTextBox_Markdown_View.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            RichTextBox_Markdown_View.ForeColor = Color.FromArgb(255, 255, 128);
-            RichTextBox_Markdown_View.Location = new Point(0, 0);
-            RichTextBox_Markdown_View.Name = "RichTextBox_Markdown_View";
-            RichTextBox_Markdown_View.Size = new Size(800, 450);
-            RichTextBox_Markdown_View.TabIndex = 2;
-            RichTextBox_Markdown_View.Text = "";
+            RichTextBox_MDFile.BackColor = Color.Black;
+            RichTextBox_MDFile.BorderStyle = BorderStyle.None;
+            RichTextBox_MDFile.Dock = DockStyle.Fill;
+            RichTextBox_MDFile.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RichTextBox_MDFile.ForeColor = Color.FromArgb(255, 255, 128);
+            RichTextBox_MDFile.Location = new Point(5, 5);
+            RichTextBox_MDFile.Margin = new Padding(5);
+            RichTextBox_MDFile.Name = "RichTextBox_MDFile";
+            RichTextBox_MDFile.ReadOnly = true;
+            RichTextBox_MDFile.Size = new Size(790, 440);
+            RichTextBox_MDFile.TabIndex = 2;
+            RichTextBox_MDFile.Text = "";
             // 
             // FormShowMDFile
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(800, 450);
-            Controls.Add(RichTextBox_Markdown_View);
+            Controls.Add(RichTextBox_MDFile);
             Name = "FormShowMDFile";
+            Padding = new Padding(5);
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormShowMDFile";
             Load += FormShowMDFile_Load;
             ResumeLayout(false);
@@ -58,6 +63,6 @@
 
         #endregion
 
-        private RichTextBox RichTextBox_Markdown_View;
+        private RichTextBox RichTextBox_MDFile;
     }
 }
