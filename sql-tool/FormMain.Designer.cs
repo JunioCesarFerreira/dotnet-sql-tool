@@ -30,18 +30,18 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel4 = new TableLayoutPanel();
-            richTextBox2 = new RichTextBox();
+            Prompt_Output = new RichTextBox();
             label2 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
-            button4 = new Button();
-            button5 = new Button();
-            comboBox1 = new ComboBox();
-            button3 = new Button();
+            Button_settings = new Button();
+            Button_Open = new Button();
+            ComboBoxDbs = new ComboBox();
+            Button_History = new Button();
             Button_Help = new Button();
-            button2 = new Button();
+            Button_Close = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             label1 = new Label();
-            prompt_sql = new RichTextBox();
+            Prompt_Input = new RichTextBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -70,7 +70,7 @@
             tableLayoutPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tableLayoutPanel4.ColumnCount = 1;
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Controls.Add(richTextBox2, 0, 1);
+            tableLayoutPanel4.Controls.Add(Prompt_Output, 0, 1);
             tableLayoutPanel4.Controls.Add(label2, 0, 0);
             tableLayoutPanel4.Location = new Point(3, 236);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -80,18 +80,18 @@
             tableLayoutPanel4.Size = new Size(779, 182);
             tableLayoutPanel4.TabIndex = 2;
             // 
-            // richTextBox2
+            // Prompt_Output
             // 
-            richTextBox2.BackColor = Color.Black;
-            richTextBox2.BorderStyle = BorderStyle.None;
-            richTextBox2.Dock = DockStyle.Fill;
-            richTextBox2.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBox2.ForeColor = Color.FromArgb(255, 255, 128);
-            richTextBox2.Location = new Point(3, 22);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(773, 157);
-            richTextBox2.TabIndex = 2;
-            richTextBox2.Text = "";
+            Prompt_Output.BackColor = Color.Black;
+            Prompt_Output.BorderStyle = BorderStyle.None;
+            Prompt_Output.Dock = DockStyle.Fill;
+            Prompt_Output.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Prompt_Output.ForeColor = Color.FromArgb(255, 255, 128);
+            Prompt_Output.Location = new Point(3, 22);
+            Prompt_Output.Name = "Prompt_Output";
+            Prompt_Output.Size = new Size(773, 157);
+            Prompt_Output.TabIndex = 2;
+            Prompt_Output.Text = "";
             // 
             // label2
             // 
@@ -115,12 +115,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel2.Controls.Add(button4, 0, 0);
-            tableLayoutPanel2.Controls.Add(button5, 1, 0);
-            tableLayoutPanel2.Controls.Add(comboBox1, 0, 0);
-            tableLayoutPanel2.Controls.Add(button3, 6, 0);
+            tableLayoutPanel2.Controls.Add(Button_settings, 0, 0);
+            tableLayoutPanel2.Controls.Add(Button_Open, 1, 0);
+            tableLayoutPanel2.Controls.Add(ComboBoxDbs, 0, 0);
+            tableLayoutPanel2.Controls.Add(Button_History, 6, 0);
             tableLayoutPanel2.Controls.Add(Button_Help, 5, 0);
-            tableLayoutPanel2.Controls.Add(button2, 2, 0);
+            tableLayoutPanel2.Controls.Add(Button_Close, 2, 0);
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
@@ -128,50 +128,50 @@
             tableLayoutPanel2.Size = new Size(779, 39);
             tableLayoutPanel2.TabIndex = 0;
             // 
-            // button4
+            // Button_settings
             // 
-            button4.Anchor = AnchorStyles.None;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(253, 7);
-            button4.Name = "button4";
-            button4.Size = new Size(24, 25);
-            button4.TabIndex = 10;
-            button4.Text = "⚙️";
-            button4.UseVisualStyleBackColor = true;
+            Button_settings.Anchor = AnchorStyles.None;
+            Button_settings.FlatStyle = FlatStyle.Flat;
+            Button_settings.ForeColor = Color.White;
+            Button_settings.Location = new Point(253, 7);
+            Button_settings.Name = "Button_settings";
+            Button_settings.Size = new Size(24, 25);
+            Button_settings.TabIndex = 10;
+            Button_settings.Text = "⚙️";
+            Button_settings.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Button_Open
             // 
-            button5.Anchor = AnchorStyles.None;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(283, 7);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 25);
-            button5.TabIndex = 5;
-            button5.Text = "Abrir";
-            button5.UseVisualStyleBackColor = true;
+            Button_Open.Anchor = AnchorStyles.None;
+            Button_Open.FlatStyle = FlatStyle.Flat;
+            Button_Open.ForeColor = Color.White;
+            Button_Open.Location = new Point(283, 7);
+            Button_Open.Name = "Button_Open";
+            Button_Open.Size = new Size(75, 25);
+            Button_Open.TabIndex = 5;
+            Button_Open.Text = "Abrir";
+            Button_Open.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // ComboBoxDbs
             // 
-            comboBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(3, 8);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(244, 23);
-            comboBox1.TabIndex = 0;
+            ComboBoxDbs.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ComboBoxDbs.FormattingEnabled = true;
+            ComboBoxDbs.Location = new Point(3, 8);
+            ComboBoxDbs.Name = "ComboBoxDbs";
+            ComboBoxDbs.Size = new Size(244, 23);
+            ComboBoxDbs.TabIndex = 0;
             // 
-            // button3
+            // Button_History
             // 
-            button3.Anchor = AnchorStyles.None;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(701, 7);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 25);
-            button3.TabIndex = 7;
-            button3.Text = "Histórico";
-            button3.UseVisualStyleBackColor = true;
+            Button_History.Anchor = AnchorStyles.None;
+            Button_History.FlatStyle = FlatStyle.Flat;
+            Button_History.ForeColor = Color.White;
+            Button_History.Location = new Point(701, 7);
+            Button_History.Name = "Button_History";
+            Button_History.Size = new Size(75, 25);
+            Button_History.TabIndex = 7;
+            Button_History.Text = "Histórico";
+            Button_History.UseVisualStyleBackColor = true;
             // 
             // Button_Help
             // 
@@ -186,17 +186,17 @@
             Button_Help.UseVisualStyleBackColor = true;
             Button_Help.Click += Button_Help_Click;
             // 
-            // button2
+            // Button_Close
             // 
-            button2.Anchor = AnchorStyles.None;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(364, 7);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 25);
-            button2.TabIndex = 6;
-            button2.Text = "Fechar";
-            button2.UseVisualStyleBackColor = true;
+            Button_Close.Anchor = AnchorStyles.None;
+            Button_Close.FlatStyle = FlatStyle.Flat;
+            Button_Close.ForeColor = Color.White;
+            Button_Close.Location = new Point(364, 7);
+            Button_Close.Name = "Button_Close";
+            Button_Close.Size = new Size(75, 25);
+            Button_Close.TabIndex = 6;
+            Button_Close.Text = "Fechar";
+            Button_Close.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -204,7 +204,7 @@
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Controls.Add(label1, 0, 0);
-            tableLayoutPanel3.Controls.Add(prompt_sql, 0, 1);
+            tableLayoutPanel3.Controls.Add(Prompt_Input, 0, 1);
             tableLayoutPanel3.Location = new Point(3, 48);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
@@ -224,19 +224,19 @@
             label1.TabIndex = 0;
             label1.Text = "Prompt comandos SQL";
             // 
-            // prompt_sql
+            // Prompt_Input
             // 
-            prompt_sql.BackColor = Color.Black;
-            prompt_sql.BorderStyle = BorderStyle.None;
-            prompt_sql.Dock = DockStyle.Fill;
-            prompt_sql.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            prompt_sql.ForeColor = Color.FromArgb(255, 255, 128);
-            prompt_sql.Location = new Point(3, 22);
-            prompt_sql.Name = "prompt_sql";
-            prompt_sql.Size = new Size(773, 157);
-            prompt_sql.TabIndex = 1;
-            prompt_sql.Text = "";
-            prompt_sql.KeyDown += prompt_sql_KeyDown;
+            Prompt_Input.BackColor = Color.Black;
+            Prompt_Input.BorderStyle = BorderStyle.None;
+            Prompt_Input.Dock = DockStyle.Fill;
+            Prompt_Input.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Prompt_Input.ForeColor = Color.FromArgb(255, 255, 128);
+            Prompt_Input.Location = new Point(3, 22);
+            Prompt_Input.Name = "Prompt_Input";
+            Prompt_Input.Size = new Size(773, 157);
+            Prompt_Input.TabIndex = 1;
+            Prompt_Input.Text = "";
+            Prompt_Input.KeyDown += prompt_sql_KeyDown;
             // 
             // FormMain
             // 
@@ -263,17 +263,17 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
-        private ComboBox comboBox1;
+        private ComboBox ComboBoxDbs;
         private Button Button_Help;
         private TableLayoutPanel tableLayoutPanel4;
         private TableLayoutPanel tableLayoutPanel3;
         private Label label1;
         private Label label2;
-        private RichTextBox richTextBox2;
-        private RichTextBox prompt_sql;
-        private Button button2;
-        private Button button5;
-        private Button button3;
-        private Button button4;
+        private RichTextBox Prompt_Output;
+        private RichTextBox Prompt_Input;
+        private Button Button_Close;
+        private Button Button_Open;
+        private Button Button_History;
+        private Button Button_settings;
     }
 }
