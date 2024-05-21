@@ -1,15 +1,19 @@
 using System;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace sql_tool
 {
     public partial class FormMain : Form
     {
+        private SQLHighlighterRules sqlHighlighterRules;
         public FormMain()
         {
             InitializeComponent();
-        }
 
+            sqlHighlighterRules = new SQLHighlighterRules(Prompt_Input);
+            Prompt_Input.TextChanged += (sender, e) => sqlHighlighterRules.HighlightSyntax();
+        }
         private void FormMain_Load(object sender, EventArgs e)
         {
         }
@@ -17,7 +21,7 @@ namespace sql_tool
         private void Button_Help_Click(object sender, EventArgs e)
         {
             string helpFile = AppDomain.CurrentDomain.BaseDirectory + "\\ComandosBasicosSQL.md";
-            FormShowMDFile formShowMDFile = new FormShowMDFile(helpFile);
+            FormShowMDFile formShowMDFile = new(helpFile);
             formShowMDFile.Show();
         }
 
