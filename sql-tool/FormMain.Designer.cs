@@ -131,13 +131,14 @@
             // Button_settings
             // 
             Button_settings.Anchor = AnchorStyles.None;
+            Button_settings.BackgroundImageLayout = ImageLayout.Zoom;
             Button_settings.FlatStyle = FlatStyle.Flat;
             Button_settings.ForeColor = Color.White;
-            Button_settings.Location = new Point(253, 7);
+            Button_settings.Image = Properties.Resources.gear;
+            Button_settings.Location = new Point(253, 5);
             Button_settings.Name = "Button_settings";
-            Button_settings.Size = new Size(24, 25);
+            Button_settings.Size = new Size(31, 29);
             Button_settings.TabIndex = 10;
-            Button_settings.Text = "⚙️";
             Button_settings.UseVisualStyleBackColor = true;
             // 
             // Button_Open
@@ -145,9 +146,9 @@
             Button_Open.Anchor = AnchorStyles.None;
             Button_Open.FlatStyle = FlatStyle.Flat;
             Button_Open.ForeColor = Color.White;
-            Button_Open.Location = new Point(283, 7);
+            Button_Open.Location = new Point(290, 5);
             Button_Open.Name = "Button_Open";
-            Button_Open.Size = new Size(75, 25);
+            Button_Open.Size = new Size(75, 28);
             Button_Open.TabIndex = 5;
             Button_Open.Text = "Abrir";
             Button_Open.UseVisualStyleBackColor = true;
@@ -166,9 +167,9 @@
             Button_History.Anchor = AnchorStyles.None;
             Button_History.FlatStyle = FlatStyle.Flat;
             Button_History.ForeColor = Color.White;
-            Button_History.Location = new Point(701, 7);
+            Button_History.Location = new Point(701, 5);
             Button_History.Name = "Button_History";
-            Button_History.Size = new Size(75, 25);
+            Button_History.Size = new Size(75, 28);
             Button_History.TabIndex = 7;
             Button_History.Text = "Histórico";
             Button_History.UseVisualStyleBackColor = true;
@@ -178,9 +179,9 @@
             Button_Help.Anchor = AnchorStyles.None;
             Button_Help.FlatStyle = FlatStyle.Flat;
             Button_Help.ForeColor = Color.White;
-            Button_Help.Location = new Point(620, 7);
+            Button_Help.Location = new Point(620, 5);
             Button_Help.Name = "Button_Help";
-            Button_Help.Size = new Size(75, 25);
+            Button_Help.Size = new Size(75, 28);
             Button_Help.TabIndex = 1;
             Button_Help.Text = "Ajuda";
             Button_Help.UseVisualStyleBackColor = true;
@@ -191,9 +192,9 @@
             Button_Close.Anchor = AnchorStyles.None;
             Button_Close.FlatStyle = FlatStyle.Flat;
             Button_Close.ForeColor = Color.White;
-            Button_Close.Location = new Point(364, 7);
+            Button_Close.Location = new Point(371, 5);
             Button_Close.Name = "Button_Close";
-            Button_Close.Size = new Size(75, 25);
+            Button_Close.Size = new Size(75, 28);
             Button_Close.TabIndex = 6;
             Button_Close.Text = "Fechar";
             Button_Close.UseVisualStyleBackColor = true;
@@ -236,7 +237,7 @@
             Prompt_Input.Size = new Size(773, 157);
             Prompt_Input.TabIndex = 1;
             Prompt_Input.Text = "";
-            Prompt_Input.KeyDown += prompt_sql_KeyDown;
+            Prompt_Input.KeyDown += Prompt_sql_KeyDown;
             // 
             // FormMain
             // 

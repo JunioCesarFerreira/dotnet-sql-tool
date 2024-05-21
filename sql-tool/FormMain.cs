@@ -21,7 +21,7 @@ namespace sql_tool
             formShowMDFile.Show();
         }
 
-        private void prompt_sql_KeyDown(object sender, KeyEventArgs e)
+        private void Prompt_sql_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
